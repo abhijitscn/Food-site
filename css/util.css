@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Raleway-semiBold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.magic-shadow {
+  position: relative;
+  background: var(--heaven);
+}
+.text-center {
+  text-align: center;
+}
+.magic-shadow::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -18px;
+  z-index: -1;
+  background-position: center;
+}
+
+.magic-shadow-sm {
+  position: relative;
+  background: var(--heaven);
+}
+
+.magic-shadow-sm::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow-sm.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -22px;
+  z-index: -1;
+  background-position: center;
+}
+
+.btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.7s ease;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Raleway-semiBold";
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--heaven);
+}
+
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: var(--heaven);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--heaven);
+}
+
+.btn-secondary:hover {
+  color: var(--secondary);
+  background-color: var(--heaven);
+}
+
+.section-heading {
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.section-heading:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url(../icons/hr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+
+.slick-slide {
+  margin: 0 27px;
+}
+
+.slick-track {
+  padding: 1rem 0 !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.text-primary{
+  color: var(--secondary);
+}
